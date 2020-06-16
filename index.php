@@ -18,8 +18,21 @@ echo json_encode($usuarios);*/
 //echo json_encode($lista);
 
 //Carrega um usuario usando o login e senha
+//$usuario = new Usuario();
+//$usuario->login("camila","camila");
+//echo $usuario;
+
+// Inserção de Usuario
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("aluno123");
+//$aluno->insert();
+//echo $aluno;
+
+// Alteração de Usuario
 $usuario = new Usuario();
-$usuario->login("camila","camila");
+$usuario->loadById(5);
+$usuario->update("professor","professor456");
 echo $usuario;
 
 ?>
